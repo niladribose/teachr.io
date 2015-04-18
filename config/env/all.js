@@ -2,7 +2,7 @@
 
 module.exports = {
 	app: {
-		title: 'teacy.io',
+		title: 'MODERN CPP',
 		description: 'Y',
 		keywords: 'teaching hacking '
 	},
