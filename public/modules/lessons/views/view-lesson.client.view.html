@@ -2,6 +2,9 @@
 	<div class="page-header">
 		<h1 data-ng-bind="lesson.name"></h1>
 	</div>
+	<div class="embed-responsive embed-responsive-16by9"> 
+		<youtube-video class="embed-responsive-item" video-id="lesson.videoLocation"></youtube-video>
+	</div>
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == lesson.user._id))">
 		<a class="btn btn-primary" href="/#!/lessons/{{lesson._id}}/edit">
 			<i class="glyphicon glyphicon-edit"></i>

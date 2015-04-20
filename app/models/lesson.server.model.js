@@ -16,6 +16,11 @@ var LessonSchema = new Schema({
 		required: 'Please fill Lesson name',
 		trim: true
 	},
+	videoLocation: {
+		type: String,
+		default: '',
+		trim: true
+	},
 	created: {
 		type: Date,
 		default: Date.now

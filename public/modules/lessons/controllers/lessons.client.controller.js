@@ -9,7 +9,8 @@ angular.module('lessons').controller('LessonsController', ['$scope', '$statePara
 		$scope.create = function() {
 			// Create new Lesson object
 			var lesson = new Lessons ({
-				name: this.name
+				name: this.name,
+				videoLocation: this.videoLocation
 			});
 
 			// Redirect after save
