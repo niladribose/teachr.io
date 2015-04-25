@@ -4,11 +4,14 @@
     </div>
     <div class="list-group">
         <a data-ng-repeat="lesson in latestlessons" data-ng-href="#!/lessons/{{lesson._id}}" class="list-group-item">
-			<small class="list-group-item-text">
+            <small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="lesson.created | date:'medium'"></span>
 			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="lesson.name"></h4>
+            <h4 class="list-group-item-heading" data-ng-bind="lesson.name"></h4>
+            <div class="embed-responsive embed-responsive-16by9">
+                <youtube-video class="embed-responsive-item" video-id="lesson.videoLocation"></youtube-video>
+            </div>
         </a>
     </div>
 </section>
