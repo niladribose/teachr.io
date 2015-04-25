@@ -1,3 +1,14 @@
-<section data-ng-controller="HomeController">
-	
+<section data-ng-controller="LatestLessonsController" data-ng-init="findLatest()">
+    <div class="page-header">
+        <h1>Latest Tutorials</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="lesson in latestlessons" data-ng-href="#!/lessons/{{lesson._id}}" class="list-group-item">
+			<small class="list-group-item-text">
+				Posted on
+				<span data-ng-bind="lesson.created | date:'medium'"></span>
+			</small>
+			<h4 class="list-group-item-heading" data-ng-bind="lesson.name"></h4>
+        </a>
+    </div>
 </section>

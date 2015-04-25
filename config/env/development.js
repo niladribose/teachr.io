@@ -3,7 +3,7 @@
 module.exports = {
 	db: 'mongodb://localhost/teacyio-dev',
 	app: {
-		title: 'teacy.io - Development Environment'
+		title: 'Modern C++'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',
