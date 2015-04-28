@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/teacyio-dev',
+	db: process.env.MONGOLAB_URI || 'mongodb://localhost/teacyio-dev',
 	app: {
 		title: 'Modern C++'
 	},
